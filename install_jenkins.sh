@@ -48,7 +48,7 @@ sudo chkconfig docker on
 
 echo ##################"Installing Jenkins"#######################
 echo "Installing Jenkins"
-JENKINS_VERSION="2.401.3"  # Replace with the desired Jenkins version
+JENKINS_VERSION="2.462.3"  # Replace with the desired Jenkins version
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 sudo yum -y upgrade
@@ -61,7 +61,7 @@ sudo service jenkins start
 
 echo ###############"Installing Terraform"##################
 # Define the desired Terraform version
-TERRAFORM_VERSION="1.5.4"  # Replace with the desired version
+TERRAFORM_VERSION="1.9.5"  # Replace with the desired version
 
 # Download and install Terraform
 sudo yum install -y unzip
