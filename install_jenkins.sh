@@ -48,7 +48,7 @@ sudo chkconfig docker on
 
 echo ##################"Installing Jenkins"#######################
 echo "Installing Jenkins"
-JENKINS_VERSION="2.462.3"  # Replace with the desired Jenkins version
+JENKINS_VERSION="2.479.1"  # Replace with the desired Jenkins version
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 sudo yum -y upgrade
